@@ -1,0 +1,333 @@
+/* Navbar And Sidebar Start*/
+@font-face {
+    font-family: font-title;
+    src: url(Namecat.otf);
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+.sidebar{
+    width: 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto; /* Allow scrolling if content exceeds viewport height */
+}
+
+.sidebar-container {
+    height: 100vh;
+    border-radius: 0 30px 0 0;
+    background-color: #3559e0;
+}
+
+ .icon ,.logout{
+    border-radius: 20px !important;
+    transition: background-color 0.3s ease;
+}
+
+.icon:hover, .logout:hover {
+    background-color: #ffffff20;
+    border-radius: 20px !important;
+    transition: background-color 0.3s ease;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    color: white;
+    background-color: #ffffff20;
+    border-radius: 20px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #F5F5F5;
+    margin-left: 1px;
+}
+
+.title{
+    font-family: font-title;
+    font-size: 50px;
+    color:#3559E0 ;
+}
+
+.date,.positions,.name{
+    color:#3559E0 ;
+}
+
+.search-bar{
+    height: 50px;
+    border:1px solid #3559E0;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+.rounded{
+    width: 500px;
+}
+
+.admin{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    height: 130px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the values for the shadow */
+}
+
+.profile{
+    width: 100px;
+    border-radius: 15px;
+}
+/* Navbar And Sidebar End*/
+
+
+/*Menu Start*/
+@font-face {
+    font-family: font-categories;
+    src: url(KH\ BAPHNOM\ 06\ VEAL-SBOUV\ VERSION\ 2.30\ SEPTEMBER\ 07\,\ 2016.TTF);
+}
+.categories{
+    font-family: font-categories;
+    color:#3559E0 ;
+    font-size: 17px;
+    margin-right: 80px;
+    text-decoration: none;
+}
+.nav-pills .nav-item a.active {
+    border-bottom: 4px solid #3559E0;
+    border-radius: 1px;
+}
+
+.nav-pills .nav-item a:hover {
+    border-bottom: 4px solid #3559E0;
+    border-radius: 1px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-bottom: 20px; /* Adjust margin as needed */
+    padding-right: 12px;
+
+}
+
+#myTab {
+    position: fixed;
+    top: 130px;
+    width: 1278px;
+    background-color: #F5F5F5;
+    z-index: 1000;
+    padding: 10px 0; /* Optional: Add padding */
+}
+
+.tab-content {
+   padding-top: 70px;
+}
+
+.card{
+    width: 270px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the values for the shadow */
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-button{
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: #3559E0;
+    border-radius: 5px;
+    color: #F5F5F5;
+}
+
+.card-img{
+    width: 95px;
+}
+
+.title-price{
+    font-family: font-categories;
+    color:#3559E0 ;
+}
+
+.ice-sugar{
+    font-family: font-categories;
+    color:#3559E0 ;
+    font-size: 15px;
+}
+
+.percentage{
+    color:#3559E0 ;
+    font-size: 12px;
+}
+
+.ice{
+    margin-right: 5px;
+}
+
+.sugar{
+    margin-right: 5px;
+}
+
+.percentage .sugar,
+.percentage .ice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid transparent; /* Start with transparent border */
+}
+
+.percentage .sugar.selected,
+.percentage .ice.selected {
+    border-color: #3559E0; /* Color of the border when selected */
+}
+
+/*Menu End*/
+
+/*Checkout Start*/
+.card-checkout{
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the values for the shadow */
+    border-radius: 20px;
+}
+
+.img-container{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the values for the shadow */
+    border-radius: 10px;
+}
+
+.card-img-checkout{
+    width: 40px;
+    height: 80px;
+}
+
+.checkout-title{
+    font-family: font-categories;
+    color:#3559E0 ;
+    font-size: 15px;
+}
+
+.icetitle {
+    font-family: font-categories;
+    color:#3559E0 ;
+    font-size: 14px;
+}
+.sugartitle {
+    font-family: font-categories;
+    color:#3559E0 ;
+    font-size: 14px;
+}
+.quantity{
+    color: #3559E0;
+}
+.counter-btn{
+    background-color: #3559E0;
+    border: none;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    color: #FFFFFF;
+}
+.btn-delete{
+    background-color: red;
+    border: none;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    color: #FFFFFF;
+}
+.percentage .sugaractive,
+.percentage .iceactive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid transparent; /* Start with transparent border */
+    border-color: #3559E0; /* Color of the border when selected */
+    font-size:11px;
+}
+.ineach{
+    font-family: font-categories;
+    color:#3559E0 ;
+    font-size: 15px;
+}
+.invoicenum{
+    font-family: font-categories;
+    color:#3559E0 ;
+    font-size: 25px;
+}
+.ordernum{
+    font-family: font-categories;
+    color:#3559E0 ;
+    font-size: 15px;
+}
+.checkouttitle{
+    border-bottom: 3px solid #3559E0;
+}
+
+.subnav-container {
+    position: fixed;
+    top: 130px;
+    width: 437px;
+    height: 75px;
+    background-color: #F5F5F5;
+    z-index: 1000;
+    margin-top: 25px;
+}
+
+.checkout-content {
+    padding-top: 60px;
+    position: fixed;
+    height: 480px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    overflow-x: hidden; /* Hide the horizontal scrollbar */
+    overflow-y: auto; /* Hide the vertical scrollbar */
+}
+.checkout-content::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.checkout-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.checkout-content::-webkit-scrollbar-thumb {
+    background: #cecece;
+    border-radius: 5px;
+}
+
+.checkout-content::-webkit-scrollbar-thumb:hover {
+    background: #9c9c9c;
+}
+
+.checkout-bill{
+    width: 437px;
+    margin-top: 500px;
+    position: fixed;
+    height: 480px;
+    color:#3559E0;
+    padding: 15px;
+    font-family: font-categories;
+}
+
+.btn-custom {
+    color: white;
+    background-color: #3559E0;
+    border-radius: 20px;
+    font-family: font-categories;
+}
+.btn-custom:hover {
+    color: white;
+    font-family: font-categories;
+}
